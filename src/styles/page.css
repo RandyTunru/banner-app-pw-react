@@ -20,8 +20,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height : 30vh;
-    width : 25vw;
+    height : 40vh;
+    width : 30vw;
     border-radius: 20px;
     padding: 20px 30px;
     background-color: white;
@@ -49,12 +49,12 @@
 }
 
 #bio-details h1{
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     white-space: nowrap;
 }
 
 #bio-details p{
-    font-size: 0.7vw;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -88,6 +88,6 @@
 }
 
 #btn:disabled{
-    background-color: rgba(127, 255, 212, 0.541);
+    background-color: rgba(127, 255, 212, 0.274);
     cursor: not-allowed;
 }

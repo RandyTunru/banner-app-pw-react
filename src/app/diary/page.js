@@ -3,7 +3,8 @@
 import { useEffect , useState } from "react";
 import "./diary.css";
 import axios from "axios";
-import Navbar from "@components/navbar/navbar";
+import Link from "next/link";
+
 
 export default function Diary() {
     const [judul, setJudul] = useState([])
@@ -26,13 +27,15 @@ export default function Diary() {
         <>
         {judul.length > 0 ? (
             <ul>
-                {judul.map((item, index) => (
+                {judul.map((item, index) => (                  
                     <li key={index}>
-                        <div className="diary-container">
-                            <h1>{item}</h1>
-                            <p>{isiDiary[index]}</p>
-                        </div>
-                    </li>
+                        <Link href={`/diary/${item}/${isiDiary[index]}`} key={index} className="link">
+                            <div className="diary-container">
+                                <h1>{item}</h1>
+                                <p>{isiDiary[index]}</p>
+                            </div>
+                        </Link>
+                    </li>   
                 ))}
             </ul>
         ) : (

@@ -3,19 +3,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height : 20vh;
+    height : 30vh;
     width : 25vw;
     border-radius: 20px;
     padding: 20px 30px;
     background-color: white;
-    gap: 2vh;
     list-style: none;
 }
 
 .diary-container p{
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 3ch;
+    white-space: nowrap;
+    height: 3vh;
+    width: 100%;
 }
 
 ul{
@@ -26,4 +27,22 @@ ul{
     justify-content: space-between;
     height: 100%;
     gap: 2vh;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.diary-container-post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width : 25vw;
+    border-radius: 20px;
+    padding: 20px 30px;
+    background-color: white;
+    gap: 2vh;
+    list-style: none;
 }
